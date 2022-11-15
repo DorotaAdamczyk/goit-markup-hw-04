@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2? family=Montserrat&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
+    <script src="./modal.js"></script>
     <title>Dorota Adamczyk</title>
   </head>
   <body>
@@ -30,12 +31,14 @@
           <span>
             <nav class="nav1">
               <ul class="list-container" class="pointer">
-                <a class="color-change" href="./index.html">Agencja</a>
+                <a class="underline" class="color-change" href="./index.html"
+                  >Agencja</a
+                >
                 <li>
                   <a
                     class="color-change"
-                    href="./portfolio.html"
                     target="_blank"
+                    href="./portfolio.html"
                     >Portfolio
                   </a>
                 </li>
@@ -64,7 +67,19 @@
           <h1 class="header-primary">
             EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="button-order">Zamów usługe</button>
+          <button
+            type="button"
+            class="button-order"
+            class="modal-btn"
+            data-modal-open
+          >
+            Zamów usługe
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal1">
+              <button type="button" class="close-btn" data-modal-close></button>
+            </div>
+          </div>
         </section>
       </section>
       <section class="container-lorem">
@@ -135,29 +150,44 @@
           </li>
         </ul>
       </section>
-      <h2 class="header-secorndary">Czym się zajmujemy</h2>
+      <h2 class="header-secorndary">Czym się zajmujemy</h2>
       <section class="photos-main1">
-        <img
-          class="photo1"
-          src="./images/photo-one.jpg"
-          width="370"
-          height="294"
-          alt="what-we-do-one"
-        />
-        <img
-          class="photo2"
-          src="./images/photo-two.jpg"
-          width="370"
-          height="294"
-          alt="what-we-do-two"
-        />
-        <img
-          class="photo3"
-          src="./images/photo-three.jpg"
-          width="370"
-          height="294"
-          alt="what-we-do-three"
-        />
+        <div class="overlay-box1">
+          <img
+            class="photo1"
+            src="./images/photo-one.jpg"
+            width="370"
+            height="294"
+            alt="co-robimy-jeden"
+          />
+          <div class="overlay-name-photos-main1">
+            <p>APLIKACJE KOMPUTEROWE</p>
+          </div>
+        </div>
+        <div class="overlay-box1">
+          <img
+            class="photo2"
+            src="./images/photo-two.jpg"
+            width="370"
+            height="294"
+            alt="co-robimy-dwa"
+          />
+          <div class="overlay-name-photos-main1">
+            <p>APLIKACJE MOBILNE</p>
+          </div>
+        </div>
+        <div class="overlay-box1">
+          <img
+            class="photo3"
+            src="./images/photo-three.jpg"
+            width="370"
+            height="294"
+            alt="co-robimy-trzy-"
+          />
+          <div class="overlay-name-photos-main1">
+            <p>ROZWIĄZANIA GRAFICZNE</p>
+          </div>
+        </div>
       </section>
       <section class="container-main-part2">
         <h2 class="team" class="header-secorndary">Nasz zespół</h2>
@@ -462,6 +492,11 @@
               ></use>
             </svg>
           </div>
+        </div>
+        <div class="subscribe-to-news">ZAPISZ SIĘ DO NEWSLETTERA</div>
+        <div class="sub-email">
+          <p class="e-mail-foot">E-mail</p>
+          <p class="subscribe">Zapisz się</p>
         </div>
       </div>
     </footer>
