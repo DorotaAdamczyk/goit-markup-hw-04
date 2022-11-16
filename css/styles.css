@@ -174,8 +174,7 @@ footer {
   text-align: center;
   letter-spacing: 0.03;
   color: #212121;
-  padding: 94px auto;
-  margin-top: 86px;
+  padding-top: 94px;
 }
 .team {
   font-weight: 700;
@@ -190,7 +189,6 @@ footer {
 .photos-secondary-box {
   position: absolute;
   width: 1600px;
-  height: 648px;
   left: 0px;
   padding-top: 94px;
   background: #f5f4fa;
@@ -231,6 +229,7 @@ footer {
   margin: 0 auto;
   display: flex;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .name {
   color: #212121;
@@ -332,7 +331,9 @@ button:focus {
 button {
   font-family: inherit;
 }
-
+.color-change {
+  display: flex;
+}
 .color-change:hover,
 .color-change:focus.color-change::after {
   color: #2196f3;
@@ -551,14 +552,13 @@ figure {
   display: flex;
   justify-content: center;
   gap: 30px;
+  padding-bottom: 94px;
 }
 .svg-icon-client {
   color: #afb1b8;
   width: 170px;
   height: 92px;
   gap: 30px;
-  margin-top: 50px;
-  margin-bottom: 256px;
   cursor: pointer;
   fill: var(--white);
   border: 1px solid var(--white);
